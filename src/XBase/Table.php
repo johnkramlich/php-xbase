@@ -83,7 +83,7 @@ class Table
 
         for ($i=0;$i<$fieldCount;$i++) {
             $column = new Column(
-                strtolower($this->readString(11)), // name
+                $this->readString(11), // name
                 $this->readByte(),      // type
                 $this->readInt(),       // memAddress
                 $this->readChar(),      // length
